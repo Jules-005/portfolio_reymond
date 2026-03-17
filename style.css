@@ -1,0 +1,158 @@
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:#121212;
+  color:#f1f1f1;
+  line-height:1.7;
+  /* petite texture "craie" simulée avec un léger bruit */
+  background-image:radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size:20px 20px;
+}
+
+/* NAVBAR */
+header{
+  background:#1a1a1a;
+  padding:15px;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  border-bottom:1px dashed #666; /* style trait craie */
+}
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  max-width:1100px;
+  margin:auto;
+}
+
+.navbar ul{
+  display:flex;
+  list-style:none;
+  gap:20px;
+}
+
+.navbar a{
+  color:#f1f1f1;
+  text-decoration:none;
+  font-weight:500;
+  text-shadow:0 0 1px rgba(255,255,255,0.6); /* effet léger craie */
+}
+
+.navbar a:hover{
+  color:#00ffd5;
+  text-shadow:0 0 2px #00ffd5;
+}
+
+/* HERO */
+.hero{
+  height:60vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:#181818;
+  border-bottom:1px dashed #666; /* trait craie */
+}
+
+.hero h2{
+  font-size:2.5em;
+  margin-bottom:10px;
+  color:#00ffd5;
+  text-shadow:0 0 2px #00ffd5;
+}
+
+/* Bouton télécharger (grille / CV) */
+.btn-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #00ffd5; /* bleu vif */
+  color: #000; /* texte noir pour contraste */
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: #00c3a5; /* bleu un peu plus foncé au survol */
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 8px #00ffd5;
+}
+/* CARDS */
+.card{
+  max-width:1000px;
+  margin:60px auto;
+  background:#1b1b1b;
+  padding:40px;
+  border-radius:10px;
+  border:1px dashed #666; /* bordure style craie */
+  box-shadow:0 0 15px rgba(0,0,0,0.4);
+  font-family:'Comic Neue', cursive; /* police style craie */
+}
+
+.card h2{
+  margin-bottom:20px;
+  color:#00ffd5;
+  text-shadow:0 0 2px #00ffd5;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+  margin-top:20px;
+}
+
+.box{
+  background:#222;
+  padding:25px;
+  border-radius:8px;
+  border:1px dashed #666; /* trait craie */
+  font-family:'Comic Neue', cursive; /* texte style craie */
+}
+
+.box h3{
+  margin-bottom:10px;
+  color:#00ffd5;
+  text-shadow:0 0 1px #00ffd5;
+}
+
+.box a{
+  color:#00ffd5;
+  text-decoration:none;
+}
+.box .btn {
+  color:#000;
+  background:#00ffd5;
+}
+
+/* LISTES */
+ul{
+  margin-left:20px;
+  list-style:disc;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  background:#1a1a1a;
+  border-top:1px dashed #666; /* trait craie */
+  margin-top:40px;
+}
